@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upscaler</title>
+    <!-- Include your CSS stylesheets here -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="preload" href="{% static 'css/style.css'%}" as="style" />
+    <link rel="stylesheet" href="{% static 'css/c2a7d436f596ec0e.css'%}" data-n-g="" /><noscript data-n-css=""></noscript>
+    <style id="__jsx-64da0f4b789eb1fc">
+        .goog-te-gadget-simple.jsx-64da0f4b789eb1fc {
+            font-size: .875rem;
+            padding: .25rem .5rem;
+            background-color: white;
+            border: 1px solid#e2e8f0;
+            -webkit-border-radius: .25rem;
+            -moz-border-radius: .25rem;
+            border-radius: .25rem;
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .05)
+        }
+        
+        @media screen and (max-width:640px) {
+            .goog-te-gadget-simple.jsx-64da0f4b789eb1fc {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 9999;
+                width: 100%;
+                max-height: 50%;
+                overflow-y: scroll
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="__next">
+        
+        <div class="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+            <header class="flex justify-between items-center w-full mt-1 border-b-2 pb-2 sm:px-2 px-2">
+                <a class="flex space-x-2 justify-center" href="/"><img alt="Photo restore icon" src="{% static 'images/imageIcon.png' %}" width="30" height="30" decoding="async" data-nimg="1" class="sm:w-14 sm:h-14 w-9 h-9" loading="lazy" style="color:transparent" />
+                    <h1 class="text-3xl font-bold ml-2 tracking-tight">ThinkAi.io</h1>
+                </a>
+                <button class="bg-sky-100 rounded-xl text-black font-medium p-2 ml-8 hover:bg-gray-100 transition flex align-center content-center justify-center">Share<svg class="ml-2 self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path> </svg></button>
+            </header>
+            <main class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-2 md:mt-4">
+               
+                <h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">Free AI Photo
+                    <!-- --><span class="relative whitespace-nowrap text-[#3290EE]"><svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70" preserveAspectRatio="none"><path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path></svg><span class="relative">Restoration With ThinkAi.io</span></span>
+                </h1>
+                <div class="flex flex-col justify-center">
+                    <div class="group relative -mx-3 flex gap-3 rounded-lg p-3 text-sm leading-6 sm:flex-col sm:p-6"><a class="w-full flex justify-center inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                            >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>Image Upscaler</a></div>
+                
+                        </div>
+                        <form method="POST" enctype="multipart/form-data" id="upload-form" action="{% url 'upload_image' %}">
+                            {% csrf_token %}
+                            {{ form }}
+                            <select name="upscale">
+                                <option value="2">2x</option>
+                                <option value="3">3x</option>
+                                <option value="4">4x</option>
+                            </select>
+                            <button class="bg-sky-100 justify-center" type="submit">Submit & Upload and Upscale Image</button>
+                        </form>
+                </div>
+
+            <footer class="text-center w-full pt-12 pb-8 border-t mt-5 flex sm:flex-row flex-col justify-between align-center items-center px-3 space-y-3 sm:mb-0 mb-3 border-gray-500"><ins class="adsbygoogle w-full" style="display:block" data-ad-client="ca-pub-1811096409986237" data-ad-slot="1823039596" data-ad-layout="in-article" data-ad-layout-key="" data-ad-format="fluid" data-full-width-responsive="false"></ins></footer>
+        </div>
+    </div>
+
+</body>
+</html>

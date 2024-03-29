@@ -1,0 +1,436 @@
+<!doctype html>
+<html data-n-head-ssr lang="en-US" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en-US%22%7D%7D">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Try our free online image upscaler tool,
+     capable of upscaling images by 400% and up to 16000x16000 resolution.
+      Enlarge your images without compromising quality. Supports JPG, PNG, and JPEG formats.">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="ai, image upscaler, upscale image, photos,
+     pictures, enhance, upscale, 2k, 4k, 8k, topaz, free, without losing quality">
+    <title>AI Image Upscaler | Upscale Image Online Batch Free</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/style.css' %}">
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3375362754009496" defer></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-JJNK40XYY8" defer></script>
+
+    <!-- Include Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<style>
+    .after {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        color: #fff;
+        background: #3131c0;
+        padding: 2px 11px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    
+    .before {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        font-weight: 600;
+        font-weight: 800;
+        color: #fff;
+        background: #3131c0;
+        padding: 2px 11px;
+        border-radius: 10px;
+    }
+    
+    .img-div::before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+    
+    .img-div2::before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div>
+                <header class="fixed top-0 shadow-sm z-40 w-full backdrop-blur-sm bg-white/30 text-gray-800 dark:bg-white">
+
+                    <div class="container mx-auto max-w-screen-xl flex items-center justify-between px-8">
+                        <div class="flex items-center">
+                            <a href="#" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">
+                                <img src="{% static 'images/logo.png' %}" alt="Image Upscaler Logo" class="h-6 mr-4">
+                            </a>
+                        </div>
+                        <nav class="hidden lg:flex items-center">
+                            <ul class="flex flex-grow items-center gap-4 text-base">
+                                <li class="py-4">
+                                    <a href="index.html" aria-current="page" class="text-gray-600 hover:text-blue-700 nuxt-link-exact-active nuxt-link-active">Image
+                                            Upscaler
+                                            <sup
+                                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">Free</sup>
+                                        </a>
+                                </li>
+                                <li class="py-4 flex align-center">
+                                    <a href="background-remover.html" class="text-gray-600 hover:text-blue-700">Background Eraser
+                                            <sup
+                                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">Free</sup>
+                                        </a>
+                                </li>
+                                <li class="py-4">
+                                    <a href="imagetoverctor.html" class="text-gray-600 hover:text-blue-700">Image To
+                                            Vector
+                                            <sup
+                                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">Free</sup>
+                                        </a>
+                                </li>
+                                <li class="py-4">
+                                    <a href="svgtoeps.html" class="text-gray-600 hover:text-blue-700">SVG To EPS AI
+                                            <sup
+                                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">Free</sup>
+                                        </a>
+                                </li>
+
+                            </ul>
+                            <!-- <a href="" target="_blank"><i class="ri-discord-line text-xl ml-2"></i></a> -->
+                        </nav>
+
+                    </div>
+                </header>
+
+                <section class="bg-white">
+                    <div class="pt-48 pb-8 px-4 mx-auto max-w-screen-lg text-center lg:pt-52 lg:pb-16 lg:px-12">
+                        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
+                            Smart PNG / JPG Image Upscaler
+                        </h1>
+                        <p class="text-lg font-light text-gray-500 lg:text-xl sm:px-16 xl:px-12">
+                            Enhance your images with the best AI upscaler tool online without losing any detail or quality. No need to install any software. Just upload your images and let the tool do the magic!
+                        </p>
+                        <div class="w-full px-8 py-8" data-v-3023b319>
+                            {% if image_url %}
+                            <div class="dropzonoe" data-v-3023b319>
+                                <div element-loading-text="Uploading and processing... Half or one minute needed" class="fileuploader" data-v-3023b319>
+                                    <div tabindex="0" class="el-upload el-upload--text">
+                                        <div class="el-upload-dragger">
+                                            <img src="{{ image_url }}" alt="Uploaded Image" style="max-width: 100%; max-height: 200px;">
+                                            <div data-v-3023b319 class="el-upload-dragger" id="drag-drop-container">
+                                                {% with image_extension=image_url|slice:'-4:' %}
+                                                <!-- Extract the last 4 characters (file extension) -->
+
+                                                <button class="text-2xl transition ease-in-out font-black rounded-full text-white px-10 py-6 bg-blue-700 hover:bg-blue-600 hover:scale-105 duration-700" data-v-3023b319><a href="{{ image_url }}" class="text-white" download="uploaded_image{{ image_extension }}">Download Image</a></button>                                                {% endwith %}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <br> {% endif %} {% comment %} download {% endcomment %}
+                            <form method="POST" enctype="multipart/form-data" id="upload-form" action="{% url 'upload_image' %}">
+                                {% csrf_token %}
+                                <div class="dropzone" data-v-3023b319>
+                                    <div element-loading-text="Uploading and processing... Half or one minute needed" class="fileuploader" data-v-3023b319>
+                                        <div tabindex="0" class="el-upload el-upload--text">
+                                            <div class="el-upload-dragger" id="drag-drop-container">
+                                                <label for="image-input" class="text-2xl transition ease-in-out font-black rounded-full text-white px-10 py-6 bg-blue-700 hover:bg-blue-600 hover:scale-105 duration-700" data-v-3023b319>Click to Upscale</label>
+                                                <input type="file" name="{{ form.image.name }}" id="image-input" multiple="multiple" accept=".jpg, .jpeg, .png, .jfif" style="display: none" class="el-upload__input">
+                                                <p class="text-lg mt-4 text-gray-500" data-v-3023b319>Drag and drop images</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <!-- select options -->
+                                <div style="margin-bottom: 10px;" data-v-3023b319>
+                                    <div role="radiogroup" class="el-radio-group" data-v-3023b319><label role="radio" aria-checked="false" tabindex="0" aria-label="Select 200% upscaling" border="" class="el-radio-button el-radio-button--medium is-active" data-v-3023b319>
+                                                <input type="radio" tabindex="-1" autocomplete="off" value="2"
+                                                    checked="checked" class="el-radio-button__orig-radio"><span
+                                                    class="el-radio-button__inner"
+                                                    style="background-color:#4a47ff;border-color:#4a47ff;box-shadow:-1px 0 0 0 #4a47ff;color:;">2X<!----></span>
+                                            </label>
+                                    </div>
+                                    &nbsp;
+                                    <div role="radiogroup" class="el-radio-group" data-v-3023b319><label role="radio" aria-checked="false" tabindex="0" aria-label="Select 200% upscaling" border="" class="el-radio-button el-radio-button--medium is-active" data-v-3023b319>
+                                                <label role="radio" aria-checked="false" tabindex="-1"
+                                                    aria-label="Select 400% upscaling" border=""
+                                                    class="el-radio-button el-radio-button--medium"
+                                                    data-v-3023b319><input type="radio" tabindex="-1" autocomplete="off"
+                                                        value="4" class="el-radio-button__orig-radio"><span
+                                                        class="el-radio-button__inner">3X<!----></span>.
+                                                </label>
+                                    </div>
+                                    &nbsp;
+                                    <div role="radiogroup" class="el-radio-group" data-v-3023b319><label role="radio" aria-checked="false" tabindex="0" aria-label="Select 200% upscaling" border="" class="el-radio-button el-radio-button--medium is-active" data-v-3023b319>
+                                                <label role="radio" aria-checked="false" tabindex="-1"
+                                                    aria-label="Select 400% upscaling" border=""
+                                                    class="el-radio-button el-radio-button--medium"
+                                                    data-v-3023b319><input type="radio" tabindex="-1" autocomplete="off"
+                                                        value="4" class="el-radio-button__orig-radio"><span
+                                                        class="el-radio-button__inner">4x<!----></span>.
+                                                </label>
+                                    </div>
+                                </div>
+                                {% if uploaded_image_url %}
+                                <img src="{{ uploaded_image_url }}" alt="Uploaded Image" style="max-width: 100%; max-height: 200px;">
+                                <br>
+                                <a href="{{ uploaded_image_url }}" download="uploaded_image.jpg">Download Image</a> {% endif %}
+                                <!---->
+                                <div class="modal flex items-start justify-center" style="display:none;" data-v-4a29a1d1 data-v-3023b319>
+                                    <div class="flex items-center relative bg-white rounded-lg shadow dark:bg-gray-600" data-v-4a29a1d1><button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                                            data-v-4a29a1d1><i class="ri-close-line" data-v-4a29a1d1></i> <span
+                                                    class="sr-only" data-v-4a29a1d1>Close modal</span></button>
+                                        <div class="px-6 py-6 lg:px-8" data-v-4a29a1d1>
+                                            <h3 class="mb-2 text-2xl font-black text-gray-900 dark:text-white" data-v-4a29a1d1>
+                                                Sign up for free
+                                            </h3>
+                                            <p class="text-base mb-4 font-light text-gray-700 dark:text-gray-300" data-v-4a29a1d1>
+                                                Get 20 free credits/month by creating a free account. Delete the account at any time.
+                                            </p>
+                                            <form data-v-4a29a1d1>
+                                                <div data-v-4a29a1d1><label for="email" class="block text-sm font-medium text-gray-900 dark:text-white" data-v-4a29a1d1><i class="ri-mail-send-line"
+                                                                data-v-4a29a1d1></i>
+                                                            Email</label> <input type="email" name="email" id="email" placeholder="Enter your email address here" required="required" value="" class="bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                                        data-v-4a29a1d1> <label for="email" class="block mt-2 text-sm font-medium text-gray-900 dark:text-white" data-v-4a29a1d1><i class="ri-lock-password-line"
+                                                                data-v-4a29a1d1></i>
+                                                            Password</label> <input type="password" name="password" id="password" placeholder="Enter your password here" required="required" value="" class="mt-2 bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                                        data-v-4a29a1d1></div> <button type="submit" class="w-full mt-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                                    data-v-4a29a1d1><svg aria-hidden="true" viewBox="0 0 100 101"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                            class="inline w-4 h-4 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-green-500"
+                                                            style="display:none;" data-v-4a29a1d1>
+                                                            <path
+                                                                d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                                                fill="currentColor" data-v-4a29a1d1></path>
+                                                            <path
+                                                                d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                                                fill="currentFill" data-v-4a29a1d1></path>
+                                                        </svg>
+                                                        Create free account
+                                                    </button>
+                                            </form>
+                                            <div class="text-sm mt-4 font-light text-gray-700 dark:text-gray-300" data-v-4a29a1d1>
+                                                By signing up, you agree to the
+                                                <a href="#terms" class="italic underline text-blue-500 hover:not-italic" data-v-4a29a1d1>Terms of Service</a>,
+                                                <a href="#privacy-policy" class="italic underline text-blue-500 hover:not-italic" data-v-4a29a1d1>Privacy Policy</a>, Cookie Use.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <p class="mt-2 font-light text-base px-4 "><span>
+                                    <i class="ri-information-line mr-1">
+
+                                    </i> Experience the magic of AI with our image upscaler tool.
+                                    No login / signup required and effortlessly upscale images to 2x, 3x, or 4x
+                                    dimensions for free.
+                                    Transform your images into high-quality visuals in just a few clicks!
+                                </span>
+                        </p>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="bg-gray-100">
+                    <div class="py-8 lg:py-16 mx-auto max-w-screen-lg px-4">
+                        <div class="grid grid-cols-6 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6"><span class="flex justify-center items-center">
+                                <img src="{% static 'images/logo.png' %}" alt="appsumo logo"></span> <span class="flex justify-center items-center">
+                                    <img src="{% static 'images/logo.png' %}" alt="capterra logo"></span><span class="flex justify-center items-center">
+                                    <img src="{% static 'images/logo.png' %}" alt="future logo"></span> <span class="flex justify-center items-center">
+                                    <img src="{% static 'images/logo.png' %}" alt="producthunt logo"></span> <span class="flex justify-center items-center">
+                                        <img src="{% static 'images/logo.png' %}" alt="sourceforge logo"></span> <span class="flex justify-center items-center">
+                                            <img src="{% static 'images/logo.png' %}" alt="you logo"></span></div>
+                    </div>
+                </section>
+                <!---->
+                <section class="bg-white">
+                    <div class="py-8 px-4 mx-auto max-w-screen-lg sm:py-16 lg:px-6">
+                        <div class="mx-auto max-w-screen-md text-center mb-8">
+                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Best image upscaler and enhancer tools </h2>
+                            <p class="text-gray-500 text-base font-light sm:text-xl"> Interested how our upscaler works for you? Watch our 1 minute video</p>
+                        </div>
+                        <div class="mx-auto max-w-screen-lg text-center mb-8 lg:mb-16">
+                            <div class="mx-auto w-full">
+                                <iframe width="100%" height="530" src="https://www.youtube.com/embed/MsEYdKfD2-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" title="Image Upscaler Youtube Video"></iframe>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                            <div>
+
+                                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-indigo-500 lg:h-12 lg:w-12">
+                                    <i class="ri-file-shred-line" style="color: rgb(255, 255, 255);"></i>
+                                </div>
+                                <h3 class="mb-2 text-xl font-bold">Latest AI, Much Faster</h3>
+                                <p class="text-gray-500 text-base font-light">
+                                    Integrated with latest AI and Super-Resolution technology, the whole upscaling process becomes faster. Only a few seconds are needed.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-indigo-500 lg:h-12 lg:w-12">
+                                    <i class="ri-gallery-line" style="color: rgb(255, 255, 255);"></i>
+                                </div>
+                                <h3 class="mb-2 text-xl font-bold">Batch Process</h3>
+                                <p class="text-gray-500 text-base font-light">Have hundreds of small images for upscaling? We provide the ultimate solution for batch processing. 5 images for batch processing currently.</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-indigo-500 lg:h-12 lg:w-12">
+                                    <i class="ri-gallery-line" style="color: rgb(255, 255, 255);"></i>
+                                </div>
+                                <h3 class="mb-2 text-xl font-bold">We Protect Your Privacy</h3>
+                                <p class="text-gray-500 text-base font-light">All photos will be cleared within 24 hours. Your privacy is highly protected and feel safe to use our services.Have hundreds of small images for upscaling? .</p>
+                            </div>
+                        </div>
+                </section>
+                <!-- Videos -->
+                <section class="bg-gray-100">
+                    <div class="py-8 px-4 mx-auto max-w-screen-lg sm:py-16 lg:px-6">
+                        <div class="mx-auto max-w-screen-md text-center mb-8">
+                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"> Lightning fast and super powerful </h2>
+                            <p class="text-gray-500 text-base font-light sm:text-xl">Move the slider on the image to check the before-after images simply. The AI could produce better result if the image is clear at its original small size.</p>
+
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="img-div position-relative">
+                                    <img src="{% static 'images/cardimg1.jpg' %}" alt="" class="img-fluid">
+                                    <span class="before">before</span>
+                                    <span class="after">After</span>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="img-div2 position-relative">
+                                    <img src="{% static 'images/cardimg4.jpg' %}" alt="" class="img-fluid">
+                                    <span class="before">before</span>
+                                    <span class="after">After</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!--  -->
+                <section class="bg-white">
+                    <div class="py-8 px-4 mx-auto max-w-screen-lg sm:py-16 lg:px-6">
+                        <div class="mx-auto max-w-screen-md text-center mb-8">
+                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Why Use ImgUpscaler
+                            </h2>
+                            <p class="text-gray-500 text-base font-light sm:text-xl">ImgUpscaler is a new product and brand from ImgLarger. In this section, I would like to show you the reason why we release this new tool and the difference between ImgUpscaler and ImgLarger.
+                            </p>
+                        </div>
+                        <div class="space-y-4 md:grid md:grid-cols-2 md:gap-6 md:gap-x-12 md:space-y-0">
+                            <div class="p-8 bg-indigo-100 rounded-xl">
+                                <h3 class="text-xl font-bold mb-4">Upscale Image / Enhance Image </h3>
+                                <p class="text-gray-500">PhotoUpsizer is a photo upscaler tool that uses state-of-the-art deep learning and super-resolution technology to improve the quality and resolution of your photos. You can upload any photo you want and choose the upscaling
+                                    factor you prefer. PhotoUpsizer can also process multiple photos at the same time with fast speed and high accuracy. PhotoUpsizer is the best way to make your photos look amazing!.</p>
+                                <a href="/" aria-current="page" type="button" class="mt-8 text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 nuxt-link-exact-active nuxt-link-active"><i
+                                            class="ri-arrow-right-circle-line mr-2"></i> Try ImgUpscaler Instantly
+                                    </a>
+                            </div>
+                            <div class="p-8 bg-indigo-100 rounded-xl">
+                                <h3 class="text-xl font-bold mb-4">A Unique and Powerful Photo Upscaler Tool that Uses AI Technology</h3>
+                                <p class="text-gray-500">PhotoUpsizer is a unique photo upscaler tool that can make your photos look more stunning and realistic. PhotoUpsizer uses the latest AI technology to upscale your photos without losing any detail or quality. You can also
+                                    batch process your photos with PhotoUpsizer and save time and effort.
+                                </p><br>
+                                <a href="https://imglarger.com" type="button" class="mt-8 text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"><i
+                                            class="ri-arrow-right-circle-line mr-2"></i> Try ImgLarger Instantly
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  -->
+
+                <!-- end  -->
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" defer="defer" onload="this.onload=null;this.removeAttribute('defer');">
+
+                <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+                    <div class="mx-auto max-w-screen-xl text-center"><a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+                                ImgUpscaler
+                            </a>
+                        <p class="my-6 text-gray-500 dark:text-gray-400">AI powered free online tool for upscaling and enhancing images, photos and pictures in batch</p>
+                        <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+                            <li><a href="#" rel="nofollow" class="mr-4 hover:underline md:mr-6">Terms of Use</a>
+                            </li>
+                            <li><a href="#" rel="nofollow" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                            </li>
+                            <li><a href="#blog" class="mr-4 hover:underline md:mr-6">Blog</a></li>
+                            <li><a href="#" class="mr-4 hover:underline md:mr-6">Affiliate Program</a></li>
+                            <li><a href="mailto:support@imgupscaler.com" rel="nofollow" class="mr-4 hover:underline md:mr-6">Contact Us</a></li>
+                            <li><a href="#" rel="nofollow" class="mr-4 hover:underline md:mr-6">Twitter</a></li>
+                            <li><a href="#" rel="nofollow" class="mr-4 hover:underline md:mr-6">Discord</a></li>
+                        </ul> <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-2024 <a
+                                    href="/" aria-current="page"
+                                    class="hover:underline nuxt-link-exact-active nuxt-link-active">ThinkAI</a>. All
+                                rights reserved. </span>
+                    </div>
+                </footer>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            // Trigger form submission when the "Upload Image" button is clicked
+            var uploadButton = document.querySelector('.el-upload__input');
+            var uploadForm = document.getElementById('upload-form');
+
+            uploadButton.addEventListener('change', function() {
+                uploadForm.submit();
+            });
+
+            // Handle drag and drop to the drop zone
+            var dropZone = document.getElementById('drag-drop-container');
+
+            dropZone.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                dropZone.classList.add('drag-over');
+            });
+
+            dropZone.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                dropZone.classList.remove('drag-over');
+            });
+
+            dropZone.addEventListener('drop', function(e) {
+                e.preventDefault();
+                var files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    var inputElement = document.getElementById('image-input');
+                    inputElement.files = files;
+                    uploadForm.submit();
+                }
+            });
+        </script>
+        <script src="/_nuxt/dc4bc64.js" defer></script>
+        <script src="/_nuxt/8c7c5bd.js" defer></script>
+        <script src="/_nuxt/d79a696.js" defer></script>
+        <script src="/_nuxt/f7a9705.js" defer></script>
+        <script src="/_nuxt/d8cc7f3.js" defer></script>
+        <script src="/_nuxt/e14280a.js" defer></script>
+
+        <script data-n-head="ssr" src="https://unpkg.com/img-comparison-slider@7/dist/index.js" data-body="true" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

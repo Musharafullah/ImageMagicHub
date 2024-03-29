@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upscaler</title>
+    <!-- Include your CSS stylesheets here -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <h1>Image Upscaler</h1>
+    <form method="POST" enctype="multipart/form-data" id="upload-form" action="{% url 'upload_image' %}">
+        {% csrf_token %}
+        {{ form }}
+        <select name="upscale">
+            <option value="2">2x</option>
+            <option value="3">3x</option>
+            <option value="4">4x</option>
+        </select>
+        <button type="submit">Upload and Upscale Image</button>
+    </form>
+
+
+
+    {% comment %} remove Background {% endcomment %}
+    <h1>Remove Background</h1>
+    {{msg}}
+    <form method="POST" enctype="multipart/form-data" id="upload-form" action="{% url 'background_remove_view' %}">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Upload and Remove Background</button>
+    </form>
+    <h1>Image change to vector AI</h1>
+    {{msg}}
+    <form method="POST" enctype="multipart/form-data" id="upload-form" action="{% url 'imagetovictor' %}">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">AI image to vector</button>
+    </form>  
+    {% comment %} svg to eps {% endcomment %}
+    <h1>SVG To EPS AI</h1>
+    {{msg}}
+    <form method="POST" enctype="multipart/form-data" id="upload-form" action="{% url 'svgToeps' %}">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">AI svg To eps</button>
+    </form>
+    
+
+    {% comment %} <div id="result-container">
+        {% if image %}
+            <h2>Upscaled Image</h2>
+            <img src="{{ image.upscale_image.url }}" alt="Upscaled Image">
+            <a href="{{ image.upscale_image.url }}" download>Download Upscaled Image</a>
+        {% endif %}
+    </div> {% endcomment %}
+
+    <!-- Include your JavaScript files here if needed -->
+</body>
+</html>

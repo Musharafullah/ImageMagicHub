@@ -1,0 +1,368 @@
+<!doctype html>
+<html data-n-head-ssr lang="en-US" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en-US%22%7D%7D">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Try our free online image upscaler tool,
+     capable of upscaling images by 400% and up to 16000x16000 resolution.
+      Enlarge your images without compromising quality. Supports JPG, PNG, and JPEG formats.">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="ai, image upscaler, upscale image, photos,
+     pictures, enhance, upscale, 2k, 4k, 8k, topaz, free, without losing quality">
+    <title>AI Image Upscaler | Upscale Image Online Batch Free</title>
+    <link rel="stylesheet" href="/static/assets/style.css">
+    <script data-n-head="ssr" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3375362754009496" defer></script>
+    <script data-n-head="ssr" data-hid="GA4" src="https://www.googletagmanager.com/gtag/js?id=G-JJNK40XYY8" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    .after {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        color: #fff;
+        background: #3131c0;
+        padding: 2px 11px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    
+    .before {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        font-weight: 600;
+        font-weight: 800;
+        color: #fff;
+        background: #3131c0;
+        padding: 2px 11px;
+        border-radius: 10px;
+    }
+    
+    .img-div::before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+    
+    .img-div2::before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div>
+                <header class="fixed top-0 shadow-sm z-40 w-full backdrop-blur-sm bg-white/30 text-gray-800 dark:bg-white">
+
+                    <div class="container mx-auto max-w-screen-xl flex items-center justify-between px-8">
+                        <div class="flex items-center">
+                            <a href="#" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">
+                                <img src="/static/images/logo.png" alt="Image Upscaler Logo" class="h-6 mr-4">
+                            </a>
+                        </div>
+                        <nav class="hidden lg:flex items-center">
+                            <ul class="flex flex-grow items-center gap-4 text-base">
+                                <li class="py-4">
+                                    <a href="{%url 'home'%}" aria-current="page" class="text-gray-600 hover:text-blue-700 nuxt-link-exact-active nuxt-link-active">Image
+                                            Upscaler
+                                            <sup
+                                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">Free</sup>
+                                        </a>
+                                </li>
+                                <li class="py-4 flex align-center">
+                                    <a href="{% url 'background_remover' %}" class="text-gray-600 hover:text-blue-700">Background Eraser
+                                        <sup class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">Free</sup>
+                                    </a>
+
+                                </li>
+                                <li class="py-4">
+                                    <a href="{% url 'image_to_vector' %}" class="text-gray-600 hover:text-blue-700">Image To
+                                            Vector
+                                            <sup
+                                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">Free</sup>
+                                        </a>
+                                </li>
+                                <li class="py-4">
+                                    <a href="{% url 'svg_to_eps' %}" class="text-gray-600 hover:text-blue-700">SVG To EPS AI
+                                            <sup
+                                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">Free</sup>
+                                        </a>
+                                </li>
+
+                            </ul>
+                            <!-- <a href="" target="_blank"><i class="ri-discord-line text-xl ml-2"></i></a> -->
+                        </nav>
+
+                    </div>
+                </header>
+                <div>
+                    <section class="bg-white">
+                        <div class="pt-48 pb-8 px-4 mx-auto max-w-screen-lg text-center lg:pt-52 lg:pb-16 lg:px-12">
+                            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
+                                Smart PNG / JPG BG Remover
+                            </h1>
+                            <p class="text-lg font-light text-gray-500 lg:text-xl sm:px-16 xl:px-12">
+                                Imagemagichub's Image Background Remover lets you effortlessly eliminate backgrounds from your images. Perfect for product photography, creating transparent logos, or enhancing the focus on your subjects, this tool ensures precision and efficiency in every removal.
+                            </p>
+                            <div class="w-full px-8 py-8" data-v-3023b319>
+                                <form method="POST" enctype="multipart/form-data" id="upload-form" action="{% url 'background_remove_view' %}">
+                                    {% csrf_token %}
+                                    <div class="dropzonoe" id="hideform" data-v-3023b319>
+                                        <div element-loading-text="Uploading and processing... Half or one minute needed" class="fileuploader" data-v-3023b319>
+                                            <div tabindex="0" class="el-upload el-upload--text">
+                                                <div class="el-upload-dragger">
+                                                    <div data-v-3023b319>
+                                                        <button class="text-2xl transition ease-in-out font-black rounded-full text-white px-10 py-6 bg-blue-700 hover:bg-blue-600 hover:scale-105 duration-700" data-v-3023b319 id="drag_or_selsect_file">Upload Images</button>
+                                                        <p class="text-lg mt-4 text-gray-500" data-v-3023b319>Drag and drop images</p>
+                                                    </div>
+                                                </div>
+                                                <input type="file" name="{{ form.image.name }}" multiple="multiple" accept=".jpg,.jpeg,.png" class="el-upload__input" id="fileInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <!-- select options -->
+                                    <button type="submit" id="formsubmit" hidden></button>
+                                </form>
+                            </div>
+                        </div>
+                         </section>
+                    <!--  -->
+                    <section class="bg-gray-100">
+                        <div class="py-8 lg:py-16 mx-auto max-w-screen-lg px-4">
+                            <div class="grid grid-cols-6 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6">
+                                <span class="flex justify-center items-center">
+                                        <img src="/static/images/co-partner.png" alt="appsumo logo"></span> <span class="flex justify-center items-center">
+                                        <img src="/static/images/co-partner.png" alt="capterra logo"></span><span class="flex justify-center items-center">
+                                        <img src="/static/images/co-partner.png" alt="future logo"></span> <span class="flex justify-center items-center">
+                                        <img src="/static/images/co-partner.png" alt="producthunt logo"></span> <span class="flex justify-center items-center">
+                                        <img src="/static/images/co-partner.png" alt="sourceforge logo"></span> <span class="flex justify-center items-center">
+                                        <img src="/static/images/co-partner.png" alt="you logo"></span>
+                            </div>
+                        </div>
+                    </section>
+                    <!---->
+                    <section class="bg-white">
+                        <div class="py-8 px-4 mx-auto max-w-screen-lg sm:py-16 lg:px-6">
+                            <div class="mx-auto max-w-screen-md text-center mb-8">
+                                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Best image upscaler and enhancer tools </h2>
+                                <p class="text-gray-500 text-base font-light sm:text-xl"> Interested how our upscaler works for you? Watch our 1 minute video</p>
+                            </div>
+                            <div class="mx-auto max-w-screen-lg text-center mb-8 lg:mb-16">
+                                <div class="mx-auto w-full">
+                                    <iframe width="100%" height="530" src="https://www.youtube.com/embed/MsEYdKfD2-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" title="Image Upscaler Youtube Video"></iframe>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                                <div>
+
+                                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-indigo-500 lg:h-12 lg:w-12">
+                                        <i class="ri-file-shred-line" style="color: rgb(255, 255, 255);"></i>
+                                    </div>
+                                    <h3 class="mb-2 text-xl font-bold">Latest AI, Much Faster</h3>
+                                    <p class="text-gray-500 text-base font-light">
+                                        Harnessing advanced AI algorithms, our Image Background Remover ensures swift and accurate background removal. Benefit from the latest AI innovations for a process that takes mere seconds. Witness distractions vanish, leaving professionally edited, attention-grabbing images.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-indigo-500 lg:h-12 lg:w-12">
+                                        <i class="ri-gallery-line" style="color: rgb(255, 255, 255);"></i>
+                                    </div>
+                                    <h3 class="mb-2 text-xl font-bold">Swift Edits, Bulk Brilliance</h3>
+                                    <p class="text-gray-500 text-base font-light">Effortlessly edit backgrounds in bulk with our Image Background Remover's batch processing feature. Currently supporting 5 images, experience the swift removal of distractions, leaving you with a collection of professionally polished visuals.</p>
+                                </div>
+                                <div>
+                                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-indigo-500 lg:h-12 lg:w-12">
+                                        <i class="ri-gallery-line" style="color: rgb(255, 255, 255);"></i>
+                                    </div>
+                                    <h3 class="mb-2 text-xl font-bold">We Protect Your Privacy</h3>
+                                    <p class="text-gray-500 text-base font-light">Effortlessly edit backgrounds with our Image Background Remover, promising a quick turnaround—all photos cleared within 24 hours. Your privacy is paramount, ensuring a secure experience. Handling a bulk of small images? Take advantage of our batch processing, simplifying your editing tasks.</p>
+                                </div>
+                            </div>
+                    </section>
+                    <!-- Videos -->
+                    <section class="bg-gray-100">
+                        <div class="py-8 px-4 mx-auto max-w-screen-lg sm:py-16 lg:px-6">
+                            <div class="mx-auto max-w-screen-md text-center mb-8">
+                                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"> Swift Edits, Boundless Power </h2>
+                                <p class="text-gray-500 text-base font-light sm:text-xl">Harness the swiftness and potency of our Image Background Remover. Slide through before-after images seamlessly with our intuitive tool. Clear, original small-sized images amplify AI precision, ensuring impeccable results.</p>
+
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="img-div position-relative">
+                                        <img src="./images/cardimg1.jpg" alt="" class="img-fluid">
+                                        <span class="before">before</span>
+                                        <span class="after">After</span>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="img-div2 position-relative">
+                                        <img src="./images/cardimg4.jpg" alt="" class="img-fluid">
+                                        <span class="before">before</span>
+                                        <span class="after">After</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--  -->
+                    <section class="bg-white">
+                        <div class="py-8 px-4 mx-auto max-w-screen-lg sm:py-16 lg:px-6">
+                            <div class="mx-auto max-w-screen-md text-center mb-8">
+                                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Why Use ImgUpscaler
+                                </h2>
+                                <p class="text-gray-500 text-base font-light sm:text-xl">Introducing Imagemagichub, the innovative counterpart to Imagemagiclarger! Navigate the realm of swift background removal with a tool poised to make waves. This section unveils the motivations driving the creation of Imagemagichub, shedding light on the nuances that differentiate it from Imagemagiclarger.
+                                </p>
+                            </div>
+                            <div class="space-y-4 md:grid md:grid-cols-2 md:gap-6 md:gap-x-12 md:space-y-0">
+                                <div class="p-8 bg-indigo-100 rounded-xl">
+                                    <h3 class="text-xl font-bold mb-4">Background Brilliance with ImagemagicClean </h3>
+                                    <p class="text-gray-500">Introducing Imagemagichub's ImagemagicClean, your gateway to swift and precise background removal. Harnessing advanced technology, this tool guarantees a seamless experience. Imagemagichub's ImagemagicClean is designed to unveil the true potential of your images. Dive into the world where backgrounds fade away effortlessly, leaving you with professionally polished visuals.</p>
+                                    <a href="/" aria-current="page" type="button" class="mt-8 text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 nuxt-link-exact-active nuxt-link-active"><i
+                                                class="ri-arrow-right-circle-line mr-2"></i> Try ImgUpscaler Instantly
+                                        </a>
+                                </div>
+                                <div class="p-8 bg-indigo-100 rounded-xl">
+                                    <h3 class="text-xl font-bold mb-4">ImagemagicBlend - Where Realism Meets Precision</h3>
+                                    <p class="text-gray-500">Imagemagichub introduces ImagemagicBlend, a unique solution for swift and precise background removal. This tool transforms your images into works of art, seamlessly blending realism and precision. ImagemagicBlend ensures your visuals stand out, providing an effortless way to achieve professionally edited photos with a touch of magic
+                                    </p><br>
+                                    <a href="https://imglarger.com" type="button" class="mt-8 text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"><i
+                                                class="ri-arrow-right-circle-line mr-2"></i> Try ImgLarger Instantly
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--  -->
+
+                    <!-- end  -->
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" defer="defer" onload="this.onload=null;this.removeAttribute('defer');">
+                    </div>
+                    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+                        <div class="mx-auto max-w-screen-xl text-center"><a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+                                ImgUpscaler
+                            </a>
+                            <p class="my-6 text-gray-500 dark:text-gray-400">AI powered free online tool for upscaling and enhancing images, photos and pictures in batch</p>
+                            <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+                                <li><a href="#" rel="nofollow" class="mr-4 hover:underline md:mr-6">Terms of Use</a>
+                                </li>
+                                <li><a href="#" rel="nofollow" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                                </li>
+                                <li><a href="#blog" class="mr-4 hover:underline md:mr-6">Blog</a></li>
+                                <li><a href="#" class="mr-4 hover:underline md:mr-6">Affiliate Program</a></li>
+                                <li><a href="mailto:support@imgupscaler.com" rel="nofollow" class="mr-4 hover:underline md:mr-6">Contact Us</a></li>
+                                <li><a href="#" rel="nofollow" class="mr-4 hover:underline md:mr-6">Twitter</a></li>
+                                <li><a href="#" rel="nofollow" class="mr-4 hover:underline md:mr-6">Discord</a></li>
+                            </ul> <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-2024 <a
+                                    href="/" aria-current="page"
+                                    class="hover:underline nuxt-link-exact-active nuxt-link-active">ThinkAI</a>. All
+                                rights reserved. </span>
+                            <div class="language-switcher" data-v-44f8ba5b>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+     <script>
+            $(document).ready(function() {
+                // Trigger click on file input when "Upload Images" button is clicked
+                $("#drag_or_selsect_file").click(function(e) {
+                    e.preventDefault();
+                    $("#fileInput").click();
+                });
+
+                // Add event listener for change event on file input
+                $("#fileInput").on("change", function() {
+                    //alert("Image selected");
+                    $("#formsubmit").click(); // Submit the form
+                });
+
+                // Add event listener for drop event on dropzone element
+                $("#hideform").on("drop", function(e) {
+                    e.preventDefault();
+                    alert("Image dropped");
+                    // Handle the dropped files as needed
+                    var files = e.originalEvent.dataTransfer.files;
+                    // You can perform additional actions with the dropped files if needed
+                    $("#formsubmit").click(); // Submit the form
+                });
+
+                // Prevent default behavior for drop event to allow dropping files
+                $("#hideform").on("dragover", function(e) {
+                    e.preventDefault();
+                    $("#formsubmit").click(); // Submit the form
+                });
+
+                // Add event listener for change event on radio buttons inside selectanyoption
+                $("input[name='option[]']").on("change", function() {
+                    alert("Radio button selected");
+                    $("#formsubmit").click(); // Submit the form
+                });
+            });
+        </script>
+        <script>
+            window.__NUXT__ = (function(a, b, c) {
+                return {
+                    layout: "default",
+                    data: [{}],
+                    fetch: {},
+                    error: b,
+                    state: {
+                        userInfo: {
+                            userInfo: void 0,
+                            isLoginUser: a,
+                            isShowLogin: a,
+                            isShowRegister: a
+                        },
+                        i18n: {
+                            routeParams: {}
+                        }
+                    },
+                    serverRendered: true,
+                    routePath: c,
+                    config: {
+                        _app: {
+                            basePath: c,
+                            assetsPath: "\u002F_nuxt\u002F",
+                            cdnURL: b
+                        }
+                    }
+                }
+            }(false, null, "\u002F"));
+        </script>
+        <script src="/_nuxt/cbfe5ed.js" defer></script>
+        <script src="/_nuxt/dc4bc64.js" defer></script>
+        <script src="/_nuxt/8c7c5bd.js" defer></script>
+        <script src="/_nuxt/d79a696.js" defer></script>
+        <script src="/_nuxt/f7a9705.js" defer></script>
+        <script src="/_nuxt/d8cc7f3.js" defer></script>
+        <script src="/_nuxt/e14280a.js" defer></script>
+
+        <script data-n-head="ssr" src="https://unpkg.com/img-comparison-slider@7/dist/index.js" data-body="true" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
