@@ -6,8 +6,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('backgroundremover', views.background_remover,
-         name='background_remover'),
+#     path('backgroundremover', views.background_remover,
+#          name='background_remover'),
 
     path('imagetovector', views.image_to_vector, name='image_to_vector'),
 
@@ -17,8 +17,6 @@ urlpatterns = [
 
     path('upscaled-image/', views.upscaledimage, name='upscaledimage'),
 
-    path('backgroundremove/', views.background_remove_view,
-         name='background_remove_view'),
     # image to victor
     path('imagetovictor/', views.imagetovictor,
          name='imagetovictor'),

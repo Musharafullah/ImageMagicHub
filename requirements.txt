@@ -31,7 +31,6 @@ protobuf==5.26.1
 PyMatting==1.1.12
 pyreadline3==3.4.1
 referencing==0.34.0
-rembg==2.0.56
 reportlab==4.1.0
 requests==2.31.0
 rpds-py==0.18.0

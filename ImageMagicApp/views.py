@@ -2,7 +2,6 @@
 import os
 import cv2
 import io
-import rembg
 from io import BytesIO
 # import potrace
 from django.http import HttpResponseBadRequest
@@ -28,11 +27,6 @@ from urllib.parse import urljoin
 def home(request):
     form = ImageUploadForm()
     return render(request, 'home.html', {'form': form})
-
-
-def background_remover(request):
-    return render(request, 'background_remover.html')
-
 
 def image_to_vector(request):
     form = ImageUploadForm()
@@ -125,63 +119,6 @@ def download_upscaled_image(request, pk):
         return response
 # end download function
 
-
-def background_remove_view(request):
-    if request.method == 'POST':
-        form = ImageUploadForm(request.POST, request.FILES)
-        if form.is_valid():
-            # Get the uploaded image from the form
-            uploaded_image = form.cleaned_data['image']
-
-            # Check if the uploaded file is an image (you may want to add more robust validation)
-            if not uploaded_image.name.endswith(('.jpg', '.jpeg', '.png')):
-                return HttpResponse("Invalid image format. Please upload a JPG or PNG file.")
-
-            # Read the uploaded image using Pillow
-            img = Image.open(uploaded_image)
-
-            # Convert the image to RGBA mode (if it's not already)
-            if img.mode != "RGBA":
-                img = img.convert("RGBA")
-
-            # Use Rembg to remove the background
-            with rembg.remove(img) as output:
-                output_bytes = io.BytesIO()
-                output.save(output_bytes, format="PNG")
-
-            # Define the relative path for storing the processed images in MEDIA_ROOT
-            relative_path = 'uploaded_images/'
-
-            # Join MEDIA_ROOT with the relative path to get the full storage path
-            storage_path = os.path.join(settings.MEDIA_ROOT, relative_path)
-
-            # Ensure the storage directory exists, and create it if necessary
-            os.makedirs(storage_path, exist_ok=True)
-
-            # Generate a unique filename, e.g., using the original file's name
-            filename = uploaded_image.name
-
-            # Construct the full path to save the processed image
-            processed_image_path = os.path.join(storage_path, filename)
-
-            # Save the processed image
-            with open(processed_image_path, 'wb') as processed_image_file:
-                processed_image_file.write(output_bytes.getvalue())
-
-            # Create a new instance of UploadedImage with the processed image path
-            processed_image = UploadedImage.objects.create(
-                image=uploaded_image,
-                upscale_image=os.path.join(relative_path, filename)
-            )
-
-            # Return a success message and the URL of the processed image
-            processed_image_url = os.path.join(
-                '/media', relative_path, filename)
-            msg = "Image Background removed!"
-            return render(request, 'bgremove_download.html', {'form': form, 'msg': msg, 'processed_image_url': processed_image_url})
-    else:
-        form = ImageUploadForm()
-    return render(request, 'background_remover.html', {'form': form})
 # image to victor
 
 
